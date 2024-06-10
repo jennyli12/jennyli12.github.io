@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    height: 100vh;
+    background-color: #282D35;
+    color: #DEEBF8;
+}
+
+.banner {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #21222A;
+    height: 400px;
+    padding: 30px;
+}
+
+.banner-title, .banner-text {
+    margin: 0;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.banner-text {
+    font-size: 18px;
+}
+
+.banner-logo {
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+main {
+    width: 75%;
+    margin: auto;
+    padding: 40px 0px;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #42CBE3;
+}
+
+.main-project {
+    border-radius: 20px;
+    border: 1px solid #414755;
+    margin: 20px 0px;
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 20px;
+    color: #DEEBF8;
+    text-decoration: none;
+}
+
+.project-title:hover {
+    text-decoration: underline;
+}
+
+.project-date {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #9BA0B2;
+    margin: 0;
+}
+
+.date-icon {
+    height: 14px;
+    filter: invert(73%) sepia(21%) saturate(215%) hue-rotate(190deg) brightness(86%) contrast(82%);
+    margin-right: 7px;
+}
+
+.project-tools {
+    font-size: 14px;
+    color: #42CBE3;
+    margin: 0;
+}
+
+.project-description {
+    font-size: 14px;
+    margin-bottom: 0;
+}
