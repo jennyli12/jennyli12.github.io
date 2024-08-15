@@ -1,63 +1,64 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Jenny Li</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="banner">
-            <img src="./images/logo.svg" class="banner-logo" />
-            <h1 class="banner-title">Jenny Li</h1>
-            <p class="banner-text">Computer Engineer. RLE @ MIT.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenny Li</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="banner">
+        <img src="./images/logo.svg" />
+        <h1>Jenny Li</h1>
+        <h2>Computer Engineer. RLE @ MIT.</p>
+    </section>
+    <main>
+        <h3>Projects & Research</h3>
+
+        <div class="project">
+            <a href="./data/abstract.pdf" class="project__title">A Single Fibre Computer Enables Textile Networks and Distributed Inference</a>
+            <div class="project__date">
+                <img src="./images/date-icon.svg" />
+                <p>June 2023 - August 2023</p>
+            </div>
+            <p class="project__tools">C • Python • embedded • Bluetooth Low Energy</p>
+            <p class="project__description">
+                Research project with fibers@mit, a group focusing on thermally-drawn fibers with embedded electronics that can be woven into clothing.
+                Each fiber computer consists of an MCU (MAX32660), sensors (I2C), and a BLE SoC (DA14531); together, they form a multi-peripheral BLE network capable of monitoring biometric data and producing inference output (exercise pattern recognition, heart rate monitoring, etc.).
+                Currently being reviewed for publication.
+            </p>
         </div>
-        <main>
-            <h3 class="main-title">Projects & Research</h3>
 
-            <div class="main-project">
-                <a href="./data/abstract.pdf" class="project-title">A Single Fibre Computer Enables Textile Networks and Distributed Inference</a>
-                <div class="project-date">
-                    <img src="./images/date-icon.svg" class="date-icon" />
-                    <p>June 2023 - August 2023</p>
-                </div>
-                <p class="project-tools">C • Python • embedded • Bluetooth Low Energy</p>
-                <p class="project-description">
-                    Research project with fibers@mit, a group focusing on thermally-drawn fibers with embedded electronics that can be woven into clothing.
-                    Each fiber computer consists of an MCU (MAX32660), sensors (I2C), and a BLE SoC (DA14531); together, they form a multi-peripheral BLE network capable of monitoring biometric data and producing inference output (exercise pattern recognition, heart rate monitoring, etc.).
-                    Currently being reviewed for publication.
-                </p>
+        <div class="project">
+            <a href="./data/pokerbot.pdf" class="project__title">Poker Bot</a>
+            <div class="project__date">
+                <img src="./images/date-icon.svg" />
+                <p>January 2023 - February 2023</p>
             </div>
+            <p class="project__tools">Java • Python • AWS • machine learning • multicore programming</p>
+            <p class="project__description">
+                Java bot that plays variations of NLHE poker using state-of-the-art machine learning algorithms.
+                Trained with 5 billion iterations of Counterfactual Regret Minimization on a 96-core machine.
+                Two-time winner of MIT Pokerbots' computerized poker tournament (defeated over 100 bots).
+            </p>
+        </div>
 
-            <div class="main-project">
-                <a href="./data/pokerbot.pdf" class="project-title">Poker Bot</a>
-                <div class="project-date">
-                    <img src="./images/date-icon.svg" class="date-icon" />
-                    <p>January 2023 - February 2023</p>
-                </div>
-                <p class="project-tools">Java • Python • AWS • machine learning • multicore programming</p>
-                <p class="project-description">
-                    Java bot that plays variations of NLHE poker using state-of-the-art machine learning algorithms.
-                    Trained with 5 billion iterations of Counterfactual Regret Minimization on a 96-core machine.
-                    Two-time winner of MIT Pokerbots' computerized poker tournament (defeated over 100 bots).
-                </p>
+        <div class="project">
+            <a href="https://musictech.mit.edu/blog/harmonious" class="project__title">Harmonious</a>
+            <div class="project__date">
+                <img src="./images/date-icon.svg" />
+                <p>November 2022 - December 2022</p>
             </div>
-
-            <div class="main-project">
-                <a href="https://musictech.mit.edu/blog/harmonious" class="project-title">Harmonious</a>
-                <div class="project-date">
-                    <img src="./images/date-icon.svg" class="date-icon" />
-                    <p>November 2022 - December 2022</p>
-                </div>
-                <p class="project-tools">Python • Kivy</p>
-                <p class="project-description">
-                    A duet-based karaoke game and music teaching tool developed with the Kivy framework.
-                    Incorporates live and practice modes, allowing for an easy, natural way to rehearse harmonies.
-                    Provides instantaneous singing feedback through pitch accuracy scores.
-                </p>
-            </div>
-        </main>
-    </body>
+            <p class="project__tools">Python • Kivy</p>
+            <p class="project__description">
+                A duet-based karaoke game and music teaching tool developed with the Kivy framework.
+                Incorporates live and practice modes, allowing for an easy, natural way to rehearse harmonies.
+                Provides instantaneous singing feedback through pitch accuracy scores.
+            </p>
+        </div>
+    </main>
+</body>
 </html>

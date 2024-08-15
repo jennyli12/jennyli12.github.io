@@ -1,94 +1,98 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Inter, sans-serif;
-    height: 100vh;
+    font-family: 'Inter', sans-serif;
     background-color: #282D35;
     color: #DEEBF8;
 }
 
+img {
+    max-width: 100%;
+}
+
 .banner {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    background-color: #21222A;
-    height: 400px;
-    padding: 30px;
-}
-
-.banner-title, .banner-text {
-    margin: 0;
+    align-items: center;
     text-align: center;
+    background-color: #21222A;
+    min-height: 400px;
+    padding: 2em;
 }
 
-.banner-title {
-    font-size: 36px;
-    font-weight: 600;
-}
-
-.banner-text {
-    font-size: 18px;
-}
-
-.banner-logo {
+.banner img {
     height: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 2em;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.banner h2 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0;
 }
 
 main {
-    width: 75%;
-    margin: auto;
-    padding: 40px 0px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 2.5em 0;
 }
 
-.main-title {
-    font-size: 24px;
+main h3 {
+    font-size: 1.5rem;
     font-weight: 500;
     color: #42CBE3;
 }
 
-.main-project {
+.project {
     border-radius: 20px;
     border: 1px solid #414755;
-    margin: 20px 0px;
-    padding: 20px;
+    margin: 1.25em 0;
+    padding: 1.25em;
 }
 
-.project-title {
-    font-size: 20px;
+.project__title {
+    font-size: 1.25rem;
     color: #DEEBF8;
     text-decoration: none;
 }
 
-.project-title:hover {
+.project__title:hover {
     text-decoration: underline;
 }
 
-.project-date {
+.project__date {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #9BA0B2;
     margin: 0;
 }
 
-.date-icon {
-    height: 14px;
+.project__date img {
+    height: 0.875em;
     filter: invert(73%) sepia(21%) saturate(215%) hue-rotate(190deg) brightness(86%) contrast(82%);
-    margin-right: 7px;
+    margin-right: 0.5em;
 }
 
-.project-tools {
-    font-size: 14px;
+.project__tools {
+    font-size: 0.875rem;
     color: #42CBE3;
     margin: 0;
 }
 
-.project-description {
-    font-size: 14px;
+.project__description {
+    font-size: 0.875rem;
+    line-height: 1.5;
     margin-bottom: 0;
 }
