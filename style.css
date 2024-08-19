@@ -49,6 +49,7 @@ main {
 }
 
 main h3 {
+    text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
     color: #42CBE3;
@@ -95,4 +96,10 @@ main h3 {
     font-size: 0.875rem;
     line-height: 1.5;
     margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+    main h3 {
+        text-align: left;
+    }
 }
